@@ -167,3 +167,12 @@ nav a {
   color: #000;
   line-height: 1.5;
 }
+
+/* ================= FOOTER ================= */
+footer {
+  background: #65859E;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 2rem;
+}
