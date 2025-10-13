@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact | Alexa Sanchez Photography</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="blue-theme">
+
+  <!-- Header -->
+  <header>
+    <div class="container">
+      <a href="index.html" class="logo">AS</a>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="contact.html" class="active">Contact</a></li>
+        </ul>
+      </nav>
+      <button class="hamburger">☰</button>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main class="contact-page">
+    <h1>Contact Me</h1>
+    <p class="subtitle">Let’s connect! Feel free to send me a message.</p>
+
+    <!-- Container for Form + Table -->
+    <div class="contact-container">
+      
+      <!-- Contact Form -->
+      <form class="contact-form">
+        <fieldset>
+          <legend>Send a Message</legend>
+
+          <label for="name">Full Name:</label>
+          <input type="text" id="name" name="name" required>
+
+          <label for="email">Email Address:</label>
+          <input type="email" id="email" name="email" required>
+
+          <label for="message">Your Message:</label>
+          <textarea id="message" name="message" rows="5" required></textarea>
+
+          <div class="form-buttons">
+            <input type="submit" value="Submit">
+            <input type="reset" value="Reset">
+          </div>
+        </fieldset>
+      </form>
+
+      <!-- Available Time Table -->
+      <section class="availability">
+        <h2>Available Time</h2>
+        <table>
+          <tr>
+            <th>Day</th>
+            <th>Availability</th>
+          </tr>
+          <tr><td>Monday</td><td>8:00PM - 11:59PM</td></tr>
+          <tr><td>Tuesday</td><td>6:30PM - 11:59PM</td></tr>
+          <tr><td>Wednesday</td><td>9:00PM - 11:59PM</td></tr>
+          <tr><td>Thursday</td><td>8:00PM - 11:59PM</td></tr>
+          <tr><td>Friday</td><td>9:00PM - 11:59PM</td></tr>
+          <tr><td>Saturday</td><td>9:00PM - 11:59PM</td></tr>
+        </table>
+      </section>
+
+    </div>
+
+    <p class="contact-info">
+      <a href="tel:+639123456789">📞 +63 912 345 6789</a><br>
+      <a href="mailto:alexa@example.com">✉ alexa@example.com</a>
+    </p>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025. All rights reserved. Created by Alexa Sanchez</p>
+    <div class="socials">
+      <a href="#">Instagram</a> | <a href="#">Facebook</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
