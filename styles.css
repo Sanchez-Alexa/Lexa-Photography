@@ -1,4 +1,4 @@
-/* Reset */
+/* ================= RESET ================= */
 * {
   margin: 0;
   padding: 0;
@@ -6,38 +6,32 @@
 }
 
 body {
-  font-family: Arial, sans-serif;
+  font-family: 'Roboto', sans-serif;
+  background: #fff;
+  color: #333;
   line-height: 1.6;
 }
 
-/* Themes */
-.blue-theme {
-  background: #8ca6c1; /* matches your Figma blue */
-}
-
-.brown-theme {
-  background: #7a5c3a; /* matches your Figma brown */
-}
-
 .container {
+  width: 90%;
   max-width: 1140px;
   margin: 0 auto;
-  padding: 0 20px;
 }
 
-/* Header */
+/* ================= HEADER ================= */
 header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  background: #65859E;
+  color: white;
   padding: 1rem 0;
-  background: rgba(255,255,255,0.2);
+  position: sticky;
+  top: 0;
 }
 
 .logo {
+  font-family: 'Montserrat', sans-serif;
   font-size: 1.5rem;
   font-weight: bold;
-  color: #000;
+  color: white;
   text-decoration: none;
 }
 
@@ -48,91 +42,128 @@ nav ul {
 }
 
 nav a {
+  color: white;
   text-decoration: none;
-  color: #000;
   font-weight: bold;
 }
 
-/* Hero Section */
+.hamburger {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 2rem;
+  color: white;
+}
+
+/* ================= HERO SECTION ================= */
 .hero {
   position: relative;
+  width: 100%;
+  height: 70vh;
+  overflow: hidden;
+}
+
+.hero-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  filter: brightness(70%);
+}
+
+.hero-btn {
+  position: absolute;
+  bottom: 2rem;
+  left: 2rem;
+  background-color: #ffd36b;
+  color: #000;
+  padding: 0.75rem 1.25rem;
+  font-weight: bold;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: background 0.3s ease;
+  z-index: 2; /* Make sure it's above the image */
+}
+
+.hero-btn:hover {
+  background-color: #e6b84c;
+}
+
+/* ================= HOME - GALLERY PREVIEW ================= */
+.preview {
+  padding: 2rem 4rem;
+  background-color: transparent;
   text-align: center;
 }
 
-.hero img {
-  width: 100%;
-  height: auto;
-  display: block;
-}
-
-.hero-text {
-  position: absolute;
-  top: 40%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: white;
-}
-
-.hero-text h1 {
-  font-size: 2rem;
-}
-
-.btn {
-  display: inline-block;
-  margin-top: 1rem;
-  background: #000;
-  color: white;
-  padding: 0.5rem 1rem;
-  text-decoration: none;
-  border-radius: 5px;
-}
-
-/* Recent Works */
-.works {
-  margin: 2rem 0;
-}
-
-.works h2 {
-  margin-bottom: 1rem;
+.preview h2 {
+  font-size: 1.5rem;
+  color: #fff;
+  margin-bottom: 2rem;
 }
 
 .grid {
   display: flex;
-  gap: 1rem;
+  justify-content: center;
+  gap: 1.5rem;
+  flex-wrap: wrap;
 }
 
-.grid figure {
-  flex: 1;
+.frame {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+  overflow: hidden;
+  transition: transform 0.3s;
+  width: 250px;
 }
 
-.grid img {
+.frame img {
   width: 100%;
-  border-radius: 5px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 5px 5px 0 0;
 }
 
-/* About Preview */
-.about-preview {
-  margin: 2rem 0;
+.pic-text {
+  padding: 0.5rem;
+  font-size: 0.95rem;
+  font-style: italic;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.3);
   text-align: center;
 }
 
-.about-preview img.circle {
-  width: 120px;
-  height: 120px;
-  border-radius: 50%;
-  margin-bottom: 1rem;
+
+/* ================= HOME - MINI ABOUT ================= */
+.home-about {
+  background-color: transparent;
+  padding: 2rem 4rem;
 }
 
-/* Footer */
-footer {
-  text-align: center;
-  padding: 1rem;
-  background: rgba(255,255,255,0.2);
-  margin-top: 2rem;
-}
-
-.socials a {
+.home-about h3 {
+  font-size: 1.3rem;
   color: #000;
-  margin: 0 0.5rem;
-  text-decoration: none;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.about-mini {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  justify-content: center;
+}
+
+.about-mini .profile-pic {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.about-mini p {
+  font-size: 1rem;
+  color: #000;
+  line-height: 1.5;
 }
