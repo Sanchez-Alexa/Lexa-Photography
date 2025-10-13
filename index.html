@@ -1,75 +1,88 @@
 <!DOCTYPE html>
-<html lang = "en">
+<html lang="en">
 <head>
-	<!--
-	Full Name: Alexa M. Sanchez
-	Section: WD - 201
-	Date: October 12, 2025
-	-->
-	<title>Lexa's Photography</title>
-	<meta charset="UTF-8"/>
-	<meta name = "viewport" content = "width=device-width, initial-scale-1.0"/>
-	<link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Alexa Sanchez Photography</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
-<body class="blue-theme">
-  <div class="container">
 
-    <!-- Header -->
-    <header>
-      <a href="index.html" class="logo">AS</a>
+<body class="blue-theme">
+  <!-- Header -->
+  <header>
+    <div class="container">
+      <a href="index.html" class="logo">AS Photography</a>
       <nav>
         <ul>
-          <li><a href="index.html">Home</a></li>
+          <li><a href="index.html" class="active">Home</a></li>
           <li><a href="about.html">About</a></li>
           <li><a href="gallery.html">Gallery</a></li>
           <li><a href="contact.html">Contact</a></li>
         </ul>
       </nav>
-    </header>
+      <button class="hamburger">☰</button>
+    </div>
+  </header>
+
+  <!-- Main -->
+  <main>
 
     <!-- Hero Section -->
-    <section class="hero">
-      <img src="img/hero.png" alt="Photography hero image">
-      <div class="hero-text">
-        <h1>Capturing Stories Through the Lens.</h1>
-        <a href="gallery.html" class="btn">View Gallery</a>
-      </div>
-    </section>
+  <section class="hero">
+    <img src="img/hero.png" alt="Camera and lens on table" class="hero-img">
+    <a href="gallery.html" class="hero-btn">View Gallery</a>
+  </section>
 
-    <!-- Recent Works -->
-    <section class="works">
-      <h2>Recent Works</h2>
+
+    <!-- Gallery Preview Section -->
+    <section class="preview">
+      <h2>Featured Shots</h2>
       <div class="grid">
-        <figure>
-          <img src="img/work1.jpg" alt="Sample photo 1">
+        <figure class="frame">
+          <a href="gallery.html"><img src="img/flower.jpg" alt="Sample photo 1"></a>
+          <figcaption class="pic-text">Urban Serenity</figcaption>
         </figure>
-        <figure>
-          <img src="img/work2.jpg" alt="Sample photo 2">
+
+        <figure class="frame">
+          <a href="gallery.html"><img src="img/aso.jpg" alt="Sample photo 2"></a>
+          <figcaption class="pic-text">Moments in Time</figcaption>
         </figure>
-        <figure>
-          <img src="img/work3.jpg" alt="Sample photo 3">
+
+        <figure class="frame">
+          <a href="gallery.html"><img src="img/dilim.jpg" alt="Sample photo 3"></a>
+          <figcaption class="pic-text">Light and Shadows</figcaption>
         </figure>
       </div>
     </section>
 
-    <!-- About Preview -->
-    <section class="about-preview">
-      <img src="img/profile.jpg" alt="Alexa Sanchez" class="circle">
-      <p>
-        Hi, I’m Alexa, a web developer student and aspiring photographer. 
-        Through my lens, I share moments that inspire and connect.
-      </p>
-    </section>
-
-    <!-- Footer -->
-    <footer>
-      <p>&copy; 2025. All rights reserved. Created by Alexa Sanchez</p>
-      <div class="socials">
-        <a href="#">Instagram</a> | <a href="#">Facebook</a>
-      </div>
-    </footer>
-
+    <section class="home-about">
+    <h3>About</h3>
+    <div class="about-mini">
+    <img src="img/mecam.jpg" alt="Alexa Sanchez" class="profile-pic">
+    <p>
+      Hi, I’m Alexa, a web developer student<br>
+      also an aspiring photographer. Through my lens,<br>
+      I share moments that inspire and connect.
+    </p>
   </div>
+</section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Alexa Sanchez Photography</p>
+    <p>
+      <a href="tel:+639123456789">📞 Call Me</a> | 
+      <a href="mailto:alexa@example.com">✉ Email Me</a>
+    </p>
+    <p>
+      <a href="#">Instagram</a> | 
+      <a href="#">Facebook</a>
+    </p>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
 
