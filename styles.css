@@ -1,0 +1,138 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+}
+
+/* Themes */
+.blue-theme {
+  background: #8ca6c1; /* matches your Figma blue */
+}
+
+.brown-theme {
+  background: #7a5c3a; /* matches your Figma brown */
+}
+
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Header */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 0;
+  background: rgba(255,255,255,0.2);
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #000;
+  text-decoration: none;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+nav a {
+  text-decoration: none;
+  color: #000;
+  font-weight: bold;
+}
+
+/* Hero Section */
+.hero {
+  position: relative;
+  text-align: center;
+}
+
+.hero img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.hero-text {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+
+.hero-text h1 {
+  font-size: 2rem;
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 1rem;
+  background: #000;
+  color: white;
+  padding: 0.5rem 1rem;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+/* Recent Works */
+.works {
+  margin: 2rem 0;
+}
+
+.works h2 {
+  margin-bottom: 1rem;
+}
+
+.grid {
+  display: flex;
+  gap: 1rem;
+}
+
+.grid figure {
+  flex: 1;
+}
+
+.grid img {
+  width: 100%;
+  border-radius: 5px;
+}
+
+/* About Preview */
+.about-preview {
+  margin: 2rem 0;
+  text-align: center;
+}
+
+.about-preview img.circle {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  margin-bottom: 1rem;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 1rem;
+  background: rgba(255,255,255,0.2);
+  margin-top: 2rem;
+}
+
+.socials a {
+  color: #000;
+  margin: 0 0.5rem;
+  text-decoration: none;
+}
